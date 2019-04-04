@@ -59,8 +59,8 @@ def amazon_multiple_url_grabber(url, max_pages):
 
     #concert to array of floats
     float_prices = pandafy.prices_to_floats(prices)
-
-    
+    float_prices.sort()
+    print(f'The cheapest items is: {float_prices[0]}')
 
 
 if __name__ == "__main__":
@@ -70,6 +70,7 @@ if __name__ == "__main__":
     parser.add_argument('--single', action='store_true', help='provide this flag to scan a single page and get updated: recommended')
     parser.add_argument('--multiple', action='store_true', help='provide this flag to scan multiple pages for your product. please provide as link with multiple pages to scan || EXPERIMENTAL')
     parser.add_argument('--pages', '-p', dest='num_pages', default=3, help='define the maximum number of pages to be scanned by the crawler. Default: 3.')
+    parser.add_argument('--search', '-s', dest='search_term', help='provide a search term for amazon')
     args = parser.parse_args()
 
     print('The execution can take a while. Depending on the amount of links to be crawled, this can take serveral minutes. Please be patient.')

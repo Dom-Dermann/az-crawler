@@ -4,7 +4,7 @@ EUR 34,99
 EUR 34,99 
 EUR 34,54 
 EUR 34,54 
-price 
+EUR 72,50 
 EUR 72,50 
 EUR 72,50 
 EUR 74,99 
@@ -21,18 +21,18 @@ EUR 59,98
 EUR 59,98 
 EUR 59,98 
 price 
-price 
+EUR 17,90 - EUR 24,90 
 EUR 17,90 - EUR 24,90 
 price 
 price 
+EUR 114,98 
 price 
 EUR 114,98 
-EUR 114,98 
-EUR 89,98 
-EUR 89,98 
-EUR 54,99 
+price 
+price 
 price 
 EUR 54,99 
+EUR 54,99 
 price 
 EUR 99,99 
 EUR 99,99 
@@ -40,7 +40,7 @@ EUR 99,99
 EUR 249,99 
 EUR 249,99 
 EUR 249,99 
-EUR 54,98 
+price 
 EUR 54,98 
 EUR 54,98 
 price 
