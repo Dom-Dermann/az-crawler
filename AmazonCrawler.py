@@ -2,6 +2,7 @@ import requests
 import argparse
 import pandafy
 import pandas as pd
+import matplotlib
 import datetime
 from bs4 import BeautifulSoup
 
@@ -45,4 +46,8 @@ if __name__ == "__main__":
     except pd.errors.EmptyDataError:
         print('First time run. Starting new csv file.')
         df.to_csv("single-crawler-monitor.csv", index=False)
+
+    plot_date = pd.read_csv("single-crawler-monitor.csv", parse_dates=['Time'], index_col='Time')
+    plot_date.plot()
+    matplotlib.pyplot.show()
     
