@@ -29,12 +29,13 @@ def amazon_single_spider(url):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Provide the URL of a product you want monitored.")
-    parser.add_argument('--URL', type=str, help='provide you URL of your product.')
+    parser.add_argument('--URL', type=str, help='provide your URL of your product.')
     args = parser.parse_args()
 
     # initialize variables
     urls = []
     prices = []
+    title = 'title'
 
     # creating database for first time use
     sql_connection = sqlite3.connect("crawler.db")
@@ -50,7 +51,7 @@ if __name__ == "__main__":
 
     # saving parameters to database for periodic execution, if parameter provided
     if (args.URL):
-        
+
         sql_command = f"""
         INSERT INTO params (ind, url, title)
             VALUES (NULL, "{args.URL}", "{title}");
